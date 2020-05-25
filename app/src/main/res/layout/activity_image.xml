@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ImageActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_back_from_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cofnij"
+            android:background="@color/colorLightGrey"
+            android:layout_gravity="bottom"
+            android:layout_margin="4dp"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageView
+            android:id="@+id/image_image_activity"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:maxWidth="400dp"
+            app:srcCompat="@drawable/warsaw"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/loc_image_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:maxWidth="120dp"/>
+
+            <TextView
+                android:id="@+id/date_image_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_gravity="end"
+                android:textAlignment="viewEnd"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notka"
+            android:paddingTop="4dp"
+            android:paddingLeft="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            />
+
+        <TextView
+        android:id="@+id/note_image_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TextView"
+        android:paddingLeft="16dp"
+        />
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
